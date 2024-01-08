@@ -5,12 +5,13 @@ import "rsc.io/quote"
 
 func main(){
 	fmt.Println("Hello, World !")
+	fullname := "Akhdan Robbani"
+	fmt.Println(hello(fullname))
 	fmt.Println(quote.Go())
-	fmt.Println(Hello("akhdan"))
 }
 
 
-func Hello(name string) string{
-	message := fmt.Sprintf("HI %v, Welcome", name)
+func hello(name string) string{
+	message := fmt.Sprintf("%v in here", name)
 	return message
 }
