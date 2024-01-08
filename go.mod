@@ -1,4 +1,4 @@
-module learn_go/main
+module learn_go
 
 go 1.21.5
 
