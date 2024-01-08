@@ -4,10 +4,22 @@ import "fmt"
 import "rsc.io/quote"
 
 func main() {
-	var fullname string = "Akhdan Robbani"
-	var age int8 = 20 // age := 20
+	const fullname string = "Akhdan Robbani" //value yang tetap atau tidak bisa berubah valuenya
+	// const (
+		// firstname = "Akhdan"
+		// lastname = "Robbani"
+		// )
+	
+	// deklarasi multi variablejj
+	var (
+		firstname = "Akhdan"
+		lastname = "Robbani"
+	)
+	
+	var age = 20 // tanpa deklarasi tipe data karena sudah memiliki default value
 
-	var town string 
+
+	var town string //
 	town = "nganjuk"
 	town = "Nganjuk"
 
@@ -15,6 +27,8 @@ func main() {
 
 	fmt.Println("Hello, World!!!")
 	fmt.Println(hello(fullname))
+	fmt.Println("firstname :", firstname)
+	fmt.Println("lastname :", lastname)
 	fmt.Println(age, "years old")
 	fmt.Println(address(town, country))
 	fmt.Println("quote rsc go :", quote.Go())
