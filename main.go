@@ -4,6 +4,11 @@ import "fmt"
 import "rsc.io/quote"
 
 func main() {
+	// introduction();
+
+}
+
+func introduction(){
 	const fullname string = "Akhdan Robbani" //value yang tetap atau tidak bisa berubah valuenya
 	// const (
 		// firstname = "Akhdan"
@@ -43,3 +48,6 @@ func hello(name string) string {
 func address(town string, country string) string {
 	return fmt.Sprintf("lived in %v, %v", town, country)
 }
+
+
+
