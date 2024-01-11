@@ -49,4 +49,12 @@ func main(){
 	fmt.Println("cap :", cap(newSlice))
 	fmt.Println(newSlice2)	
 	
+
+	fromSlice := days[:]
+	toSlice  := make([]string, len(fromSlice), cap(fromSlice))
+
+	copy(toSlice, fromSlice)
+	
+	fmt.Println(fromSlice)
+	fmt.Println(toSlice)
 }
