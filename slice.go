@@ -37,5 +37,16 @@ func main(){
 	fmt.Println(dayslice2)
 	fmt.Println(days)
 
+	fmt.Println("\nMake method")
+	var newSlice []string = make([]string, 2, 5)
+	newSlice[0] = "super"
+	newSlice[1] = "one"
+	// newSlice[2] = "none" //akan error karena batasnya sudah di set 2, atau bisa juga menggunakan append
+
+	newSlice2 := append(newSlice, "oke")
+	fmt.Println(newSlice)	
+	fmt.Println("len :", len(newSlice))
+	fmt.Println("cap :", cap(newSlice))
+	fmt.Println(newSlice2)	
 	
 }
