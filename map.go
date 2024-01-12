@@ -16,4 +16,15 @@ func main(){
 		"address" : "Nganjuk",
 	}
 	fmt.Println(user2)
+
+
+	book := make(map[string]string)
+	book["title"] = "learn_golang"
+	book["author"] = "Akhdan"
+	book["ups"] = "typo"
+
+	fmt.Println(book)
+	
+	delete(book, "ups")
+	fmt.Println(book)
 }
