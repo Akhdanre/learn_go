@@ -13,13 +13,13 @@ func main() {
 	
 
 	//tambah & untuk pass by value dengan pointer
-	// var address2 *Address = &address1
-	address2 := &address1 //versi simple
+	var address2 *Address = &address1 // penambahan pointer dengan bintang serta operator dan 
+	// address2 := &address1 //versi simple
 
 
 
 	address2.province = "Jawa Timur"
 
-	fmt.Println(address1)
+	fmt.Println(address1)//ikut berubah
 	fmt.Println(address2)
 }
