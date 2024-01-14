@@ -18,7 +18,8 @@ func sayGodBye(name string) string {
 
 func Example(){
 	//bisa di akses di fungsi dengan catatan di dalam package yang sama
-	sayGodBye("akhdan")
+	result :=sayGodBye("akhdan")
 	fmt.Println(version)
+	fmt.Println(result)
 }
 
